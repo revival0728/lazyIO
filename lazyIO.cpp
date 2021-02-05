@@ -22,14 +22,14 @@ template<class T> void readc(T& c) { // readcontainer
 template<class T, class ... P> void readc(T& c, P& ... t) {
 	for(auto& i : c)
 		cin >> i;
-	read(t...);
+	readc(t...);
 }
 template<class T> void readl(T& x) { // readline
 	getline(cin, x);
 }
 template<class T, class ... P> void readl(T& x, P& ... t) {
 	getline(cin, x);
-	readline(t...);
+	readl(t...);
 }
 
 template<class T> void write(T x) {
