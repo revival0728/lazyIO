@@ -75,6 +75,11 @@ template<class T, class ... P> void write(T x, P ... t) {
 	write(t...);
 }
 void print() { cout << '\n'; }
+void print(vector<int>& vt) {
+	for(auto& i : vt)
+		cout << i << ' ';
+	cout << '\n';
+}
 template<class T> void print(T x) {
 	cout << x << '\n';
 }
